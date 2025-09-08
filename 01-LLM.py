@@ -42,7 +42,7 @@ for text, result in zip(examples, results):
     print(f" → Label: {result['label']}, Confidence: {result['score']:.4f}\n")
 
 # -------------------------------
-# Example 3: Visualization
+# Visualization 1: Horizontal Bar Plot
 # -------------------------------
 labels = [res['label'] for res in results]
 scores = [res['score'] for res in results]
@@ -50,7 +50,7 @@ scores = [res['score'] for res in results]
 plt.figure(figsize=(8, 5))
 bars = plt.barh(examples, scores, color=["green" if lbl == "POSITIVE" else "red" for lbl in labels])
 plt.xlabel("Confidence Score")
-plt.title("Sentiment Analysis Results")
+plt.title("Sentiment Analysis Results (Per Example)")
 
 # Add labels on bars
 for bar, label, score in zip(bars, labels, scores):
@@ -58,4 +58,18 @@ for bar, label, score in zip(bars, labels, scores):
              f"{label} ({score:.2f})", va='center')
 
 plt.tight_layout()
-plt.show()
+plt.savefig("sentiment_results_examples.png", dpi=300, bbox_inches="tight")
+print("✅ Plot saved as sentiment_results_examples.png")
+
+# -------------------------------
+# Visualization 2: Confidence per Sentiment Category
+# -------------------------------
+plt.figure(figsize=(6, 4))
+plt.bar(labels, scores, color=["green" if lbl == "POSITIVE" else "red" for lbl in labels])
+plt.title("Sentiment Analysis Confidence (Categories)")
+plt.ylabel("Confidence Score")
+plt.ylim(0, 1)
+
+output_file = "sentiment_results_categories.png"
+plt.savefig(output_file, dpi=300, bbox_inches="tight")
+print(f"✅ Sentiment analysis plot saved as {output_file}")
