@@ -1,8 +1,8 @@
-📄 PDF-based Question Answering System with LangChain
+### 📄 PDF-based Question Answering System with LangChain
 
 A Python-based project that allows you to query PDF documents using retrieval-augmented generation (RAG) powered by LangChain, FAISS, and OpenAI GPT models.
 
-🚀 Features
+### 🚀 Features
 
 ✅ Automatically creates a sample PDF if none exists.
 
@@ -20,7 +20,7 @@ A Python-based project that allows you to query PDF documents using retrieval-au
 
 🔧 Optional .env support for storing your OpenAI API key securely.
 
-🛠️ Prerequisites
+### 🛠️ Prerequisites
 
 Python 3.10+
 
@@ -28,22 +28,21 @@ pip (Python package manager)
 
 An OpenAI API Key with sufficient quota.
 
-📦 Installation
+### 📦 Installation
 
-Clone the repository
-
+### 1.Clone the repository
+---
 git clone <your-repo-url>
 cd 01-LLM.py
-
-
-Create a virtual environment (optional but recommended)
+---
+### 2.Create a virtual environment (optional but recommended)
 
 python -m venv .venv
 source .venv/bin/activate      # Linux / Mac
 .venv\Scripts\activate         # Windows
 
 
-Install dependencies
+### 3.Install dependencies
 
 pip install -r requirements.txt
 
@@ -60,7 +59,7 @@ pandas
 openpyxl
 
 
-Set your OpenAI API Key
+### 5.Set your OpenAI API Key
 
 Create a .env file in the project root:
 
@@ -68,12 +67,12 @@ OPENAI_API_KEY=sk-<your_actual_openai_key_here>
 
 📝 Usage
 
-Run the main app
+### 1.Run the main app
 
 python app.py
 
 
-Expected output
+### 2.Expected output
 
 ✅ OpenAI API Key loaded successfully!
 📂 Found existing sample PDF.
@@ -83,7 +82,7 @@ Expected output
 📖 Answer: [GPT-generated answer based on PDF content]
 
 
-Query custom questions
+### 3.Query custom questions
 
 Edit app.py:
 
@@ -91,7 +90,7 @@ query = "Explain how LLMs are used in education."
 answer = qa.run(query)
 print(answer)
 
-⚙️ Code Structure
+### ⚙️ Code Structure
 01-LLM.py/
 │
 ├─ app.py                  # Main Python script
@@ -101,7 +100,7 @@ print(answer)
 ├─ requirements.txt        # Python dependencies
 └─ README.md               # Project documentation
 
-🧠 How It Works
+### 🧠 How It Works
 
 PDF Creation / Loading
 
@@ -131,7 +130,7 @@ Optional Quota Fallback
 
 If OpenAI quota is exceeded, can return mock answers.
 
-⚡ Notes & Tips
+### ⚡ Notes & Tips
 
 OpenAI API Quota: Ensure your API key has sufficient quota to generate embeddings and run LLM queries.
 
@@ -141,7 +140,7 @@ Chunk Size: Adjust chunk_size and chunk_overlap for better context coverage.
 
 LangChain LLM Models: You can switch to gpt-4o-mini, gpt-3.5-turbo, or any other model supported by your API plan.
 
-🛡️ Security
+### 🛡️ Security
 
 Never commit your OpenAI API key to GitHub.
 
@@ -149,7 +148,7 @@ Use .env to store credentials securely.
 
 For deployment, consider environment variables instead of .env.
 
-📚 References
+### 📚 References
 
 LangChain Documentation
 
@@ -159,7 +158,7 @@ FAISS Vector Search
 
 ReportLab PDF Generation
 
-👩‍💻 Author
+### 👩‍💻 Author
 
 Your Name
 Email: youremail@example.com
