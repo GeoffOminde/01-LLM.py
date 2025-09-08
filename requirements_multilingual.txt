@@ -1,0 +1,18 @@
+pandas
+matplotlib
+scikit-learn
+openai
+langchain
+faiss-cpu
+gradio
+streamlit
+fastapi
+uvicorn
+
+# Multilingual NLP
+transformers
+torch
+sentencepiece
+sacremoses
+textblob
+langdetect
