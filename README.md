@@ -30,12 +30,13 @@ An OpenAI API Key with sufficient quota.
 
 ### 📦 Installation
 
-### 1.Clone the repository
----
+Clone the repository
+
 git clone <your-repo-url>
 cd 01-LLM.py
----
-### 2.Create a virtual environment (optional but recommended)
+
+
+Create a virtual environment (optional but recommended)
 
 python -m venv .venv
 source .venv/bin/activate      # Linux / Mac
