@@ -31,10 +31,11 @@ An OpenAI API Key with sufficient quota.
 📦 Installation
 
 Clone the repository
-
+---
 git clone <your-repo-url>
 cd 01-LLM.py
 
+---
 
 Create a virtual environment (optional but recommended)
 
