@@ -32,24 +32,25 @@ An OpenAI API Key with sufficient quota.
 
 Clone the repository
 
+```
 git clone <your-repo-url>
 cd 01-LLM.py
+```
 
-
-Create a virtual environment (optional but recommended)
-
+## Create a virtual environment (optional but recommended)
+```
 python -m venv .venv
 source .venv/bin/activate      # Linux / Mac
 .venv\Scripts\activate         # Windows
-
+```
 
 ### 3.Install dependencies
-
+```
 pip install -r requirements.txt
 
-
+```
 Example requirements.txt includes:
-
+```
 langchain
 langchain-openai
 langchain-community
@@ -58,21 +59,21 @@ python-dotenv
 faiss-cpu
 pandas
 openpyxl
-
+```
 
 ### 5.Set your OpenAI API Key
 
 Create a .env file in the project root:
-
+```
 OPENAI_API_KEY=sk-<your_actual_openai_key_here>
-
+```
 📝 Usage
 
 ### 1.Run the main app
-
+```
 python app.py
 
-
+```
 ### 2.Expected output
 
 ✅ OpenAI API Key loaded successfully!
@@ -86,12 +87,13 @@ python app.py
 ### 3.Query custom questions
 
 Edit app.py:
-
+```
 query = "Explain how LLMs are used in education."
 answer = qa.run(query)
 print(answer)
-
+```
 ### ⚙️ Code Structure
+```
 01-LLM.py/
 │
 ├─ app.py                  # Main Python script
@@ -100,7 +102,7 @@ print(answer)
 ├─ .env                    # Store OPENAI_API_KEY
 ├─ requirements.txt        # Python dependencies
 └─ README.md               # Project documentation
-
+```
 ### 🧠 How It Works
 
 PDF Creation / Loading
@@ -160,8 +162,9 @@ FAISS Vector Search
 ReportLab PDF Generation
 
 ### 👩‍💻 Author
-
+```
 Your Name
 Email: youremail@example.com
 
 GitHub: github.com/yourusername
+```
