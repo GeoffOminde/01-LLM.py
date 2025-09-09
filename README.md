@@ -44,7 +44,7 @@ source .venv/bin/activate      # Linux / Mac
 .venv\Scripts\activate         # Windows
 ```
 
-### 3.Install dependencies
+### Install dependencies
 ```
 pip install -r requirements.txt
 
@@ -61,7 +61,7 @@ pandas
 openpyxl
 ```
 
-### 5.Set your OpenAI API Key
+### Set your OpenAI API Key
 
 Create a .env file in the project root:
 ```
